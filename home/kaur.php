@@ -26,13 +26,13 @@ while ($data = $sql->fetch_assoc()) {
 }
 
 // Query untuk menghitung jumlah perempuan dari tabel tb_lahir
-$sql = $koneksi->query("SELECT COUNT(id_lahir) as prem FROM tb_lahir WHERE jekel='PR'");
+$sql = $koneksi->query("SELECT COUNT(nik) as prem FROM tb_lahir WHERE jekel='PR'");
 while ($data = $sql->fetch_assoc()) {
     $prem_lahir = $data['prem'];
 }
 
 // Query untuk menghitung jumlah laki-laki dari tabel tb_lahir
-$sql = $koneksi->query("SELECT COUNT(id_lahir) as laki FROM tb_lahir WHERE jekel='LK'");
+$sql = $koneksi->query("SELECT COUNT(nik) as laki FROM tb_lahir WHERE jekel='LK'");
 while ($data = $sql->fetch_assoc()) {
     $laki_lahir = $data['laki'];
 }
@@ -57,7 +57,7 @@ $total_laki = $laki_pdd + $laki_lahir + $laki_datang;
 
 
 // Query untuk mengambil data jumlah lahir
-$sql = $koneksi->query("SELECT COUNT(id_lahir) as lahir FROM tb_lahir");
+$sql = $koneksi->query("SELECT COUNT(nik) as lahir FROM tb_lahir");
 while ($data = $sql->fetch_assoc()) {
     $lahir = $data['lahir'];
 }
@@ -85,7 +85,7 @@ $pend_updated = $total_laki + $total_prem;
 
 // Query untuk data kelahiran per tahun
 $lahir_tahunan = [];
-$sql = $koneksi->query("SELECT YEAR(tgl_lh) as tahun, COUNT(id_lahir) as jumlah 
+$sql = $koneksi->query("SELECT YEAR(tgl_lh) as tahun, COUNT(nik) as jumlah 
                        FROM tb_lahir 
                        GROUP BY YEAR(tgl_lh) 
                        ORDER BY tahun");
