@@ -13,3 +13,5 @@
 ![image](https://github.com/user-attachments/assets/dc43d757-085b-431f-a507-3deb207f47ba)
 
 Dan masih banyak fitur lainnya, boleh dicoba ><
+<br>
+Dibuat untuk tugas mata kuliah Desain Front-End
