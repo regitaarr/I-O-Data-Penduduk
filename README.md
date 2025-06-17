@@ -10,7 +10,8 @@
 ---
 
 ## 🏠 2. Dashboard (Kaur)  
-> Halaman utama untuk petugas kaur, penuh info penting!  
+> Halaman utama untuk petugas kaur, penuh info penting!
+> Untuk halaman untuk admin juga sama seperti ini, yang membedakan admin bisa mengelola data pengguna.  
 > Bisa lihat statistik, notifikasi, dan pintasan ke fitur-fitur lainnya.    
 ![Dashboard](https://github.com/user-attachments/assets/97e215dc-151f-4b1b-81e9-ddd95f006729)
 
@@ -47,9 +48,7 @@
 ## 🎁 Fitur-fitur Lainnya  
 > Masih banyak lho fitur lain yang gak kalah seru:  
 > ✨ Data kematian  
-> ✨ Perpindahan penduduk  
-> ✨ Laporan rekap  
-> ✨ Notifikasi  
+> ✨ Perpindahan penduduk   
 > Yuk dicoba sendiri~ Biar makin cinta sama aplikasi ini~ 💖
 
 ---
